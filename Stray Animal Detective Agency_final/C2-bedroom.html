@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>流浪動物偵探社 Stray Animal Detective Agency | XIN XIA</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/">
+    <link rel="stylesheet" href="css/C2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 正文 -->
+    <img src="img/C/房間.jpg" alt="backround" class="backround">
+    
+    <p class="game-introdution">點點看那些你覺得可疑的地方吧！</p>
+
+    <div class="clue-count">
+        <img src="img/C/ivestigation.png" alt="ivestigation" class="ivestigation">
+        <p class="ivestigation-num"><span id="variable"></span>/5</p>
+    </div>
+
+    <button class="question"><img src="img/C/question.png" alt="question" ></button>
+
+    <div class="head-darken">
+        <p class="head-darken"> </p>
+    </div>
+
+    <div class="clue">
+        <button class="clue1" id="clue5"></button>
+        <button class="clue2" id="clue6"></button>
+        <button class="clue3" id="clue7"></button>
+        <button class="clue4" id="clue8"></button>
+        <button class="clue5" id="clue9"></button>
+    </div>
+
+    <button id="to-d" >
+        <a href="B.html" class="to-d">恭喜！你已找到所有線索</a>
+    </button>
+
+    <div class="all-darken" id="all-darken">
+        <p class="all-darken"> </p>
+    </div>
+
+    <!-- 線索介紹頁面 -->
+    
+    <div class="how-to-play1" id="how-to-play4">
+        <p class="how-to-play-description">目標 ： 找到所有的線索</p>
+        <img src="img/C/howtoplay1.png" alt="content" class="content1-img">
+        <button class="next-page1" id="how-to-play4-btn">下一頁</button>
+    </div>
+    <div class="how-to-play2" id="how-to-play5">
+        <p class="how-to-play-description">方法 ： 點點你覺得可疑的地方</p>
+        <img src="img/C/howtoplay2.png" alt="content" class="content2-img">
+        <button class="next-page2" id="how-to-play5-btn">下一頁</button>
+    </div>
+    <div class="how-to-play3" id="how-to-play6">
+        <p class="how-to-play-description">還不知道怎麼玩？</p>
+        <img src="img/C/howtoplay3.png" alt="content" class="content3-img">
+        <button class="start-game" id="how-to-play6-btn">開始調查吧！</button>
+    </div>
+    
+    <!-- <---------------> 
+
+
+    <div class="explain-page" id="explain-page5">
+        <button class="cross" id="cross5"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/房間-醫藥箱.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 醫療箱</p>
+            <p class="explain">
+                醫療箱上血跡斑斑<br>裡面的物品散落出來<br><br>
+                打開的優碘和棉花棒<br>難道麻里曾經受過傷？！
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page6">
+        <button class="cross" id="cross6"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/房間-鐵籠.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 鐵製狗籠</p>
+            <p class="explain">
+                安置在角落的鐵製狗籠<br>已生鏽且布滿灰塵<br><br>
+                裡面有放置多年的尿布墊<br>上面有明顯的掙扎痕跡...<br><br>
+                鐵欄杆被彎折<br>狗狗能從裡面出來
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page7">
+        <button class="cross" id="cross7"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/房間-醫療證明.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 醫療證明</p>
+            <p class="explain">
+                紙上寫著:<br>- 患者：麻里<br>
+                患部：右腳小腿<br>- 原因：寵物咬傷<br><br>
+                旁邊的照片是麻里被咬傷的小腿<br>情況慘重...
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page8">
+        <button class="cross" id="cross8"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/房間-相框.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 破碎的合照</p>
+            <p class="explain">
+                地上的相框玻璃碎裂<br>放著兩張皺皺的相片<br><br>
+                那是已經被撕成兩半的合照...<br>一邊是麻里，一邊是她的愛犬
+            </p>
+        </div>
+    </div>
+
+    <div class="explain-page" id="explain-page9">
+        <button class="cross" id="cross9"><img src="img/C/close_ring.png" alt="cross"></button>
+        <img src="img/C/房間-破損門框.bmp" alt="" class="explain-page-img">
+        <div class="text">
+            <p class="title">發現: 絕育通知書</p>
+            <p class="explain">
+                家中大門的木製門框被破壞<br>牆壁上出現爪痕<br><br>
+                推測是狗狗想要逃家<br>使出全力摧毀...
+            </p>
+        </div>
+    </div>
+
+    
+    <script src="js/C-2_scrip.js"></script>
+    <script src="cookies.js"></script>
+</body>
+</html>
+
+
